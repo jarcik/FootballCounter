@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">FootballCounter</string>
+    <string name="add_faul">Add faul</string>
+    <string name="add10">Add 10 points</string>
+    <string name="add5">Add 5 points</string>
+    <string name="ateam">Team A</string>
+    <string name="bteam">Team B</string>
+    <string name="points">Points</string>
+    <string name="reset">Reset</string>
+    <string name="faults">Fauls</string>
 </resources>

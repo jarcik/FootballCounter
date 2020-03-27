@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="100">
+        android:weightSum="100"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -22,16 +23,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="a team"
+                android:paddingTop="8dp"
+                android:text="@string/ateam"
                 android:textAllCaps="true"
                 android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="points"
-                android:textAllCaps="true"
-                android:layout_marginTop="15dp"/>
+                android:layout_marginTop="8dp"
+                android:text="@string/points"
+                android:textAllCaps="true" />
 
             <TextView
                 android:id="@+id/pointsA"
@@ -39,31 +41,57 @@
                 android:layout_height="wrap_content"
                 android:text="0"
                 android:textSize="60sp"
-                android:layout_marginBottom="15dp"/>
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faults"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/faulA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="40sp"
+                android:layout_marginBottom="5dp"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:width="125dp"
                 android:onClick="add5Points"
                 android:tag="A"
-                android:text="add 5 points"
-                android:width="125dp" />
+                android:text="@string/add5"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="5dp"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:width="125dp"
                 android:onClick="add10Points"
                 android:tag="A"
-                android:text="add 10 points"
-                android:width="125dp" />
+                android:text="@string/add10"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="10dp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:width="125dp"
                 android:onClick="addFault"
                 android:tag="A"
-                android:text="add fault"
-                android:width="125dp" />
+                android:text="@string/add_faul"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="10dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -77,16 +105,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="b team"
+                android:paddingTop="8dp"
+                android:text="@string/bteam"
                 android:textAllCaps="true"
                 android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="points"
-                android:textAllCaps="true"
-                android:layout_marginTop="15dp"/>
+                android:layout_marginTop="8dp"
+                android:text="@string/points"
+                android:textAllCaps="true" />
 
             <TextView
                 android:id="@+id/pointsB"
@@ -94,42 +123,71 @@
                 android:layout_height="wrap_content"
                 android:text="0"
                 android:textSize="60sp"
-                android:layout_marginBottom="15dp"/>
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faults"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/faulB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="40sp"
+                android:layout_marginBottom="5dp"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:width="125dp"
                 android:onClick="add5Points"
                 android:tag="B"
-                android:text="add 5 points"
-                android:width="125dp" />
+                android:text="@string/add5"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="5dp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:width="125dp"
                 android:onClick="add10Points"
                 android:tag="B"
-                android:text="add 10 points"
-                android:width="125dp" />
+                android:text="@string/add10"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="10dp"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:width="125dp"
                 android:onClick="addFault"
                 android:tag="B"
-                android:text="add fault"
-                android:width="125dp"/>
+                android:text="@string/add_faul"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="10dp" />
         </LinearLayout>
     </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="reset"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
+        android:width="125dp"
         android:onClick="reset"
-        android:width="125dp"/>
+        android:text="@string/reset"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:background="@color/colorAccent"/>
 
 </RelativeLayout>
